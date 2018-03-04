@@ -71,7 +71,7 @@
     </form>
     <!-- /.social-auth-links -->
 
-    <a href="#">Olvidé mi contraseña</a><br>
+    <a href="${createLink(uri: '/olvidePassword')}">Olvidé mi contraseña</a><br>
 
   </div>
   <!-- /.login-box-body -->

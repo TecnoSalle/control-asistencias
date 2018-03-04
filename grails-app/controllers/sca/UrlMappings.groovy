@@ -12,6 +12,7 @@ class UrlMappings {
         "/"(view:"/index")
         "/perfil"(view: "/perfil")
         "/acerca-de"(view: "/acerca-de")
+        "/olvidePassword"(view: "/olvidePassword")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
