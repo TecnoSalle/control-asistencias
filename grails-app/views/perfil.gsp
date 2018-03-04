@@ -75,6 +75,7 @@
                     </tbody>
                   </table>
                   <a href="#" class="btn btn-warning">Editar Datos</a>
+                  <a href="#" class="btn btn-primary">Actualizar Contraseña</a>
                 </div>
               </div>
             </div>
