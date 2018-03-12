@@ -37,7 +37,7 @@
                 <h5><strong>Jefe de la Unidad Ultra</strong></h5>
 
                 </div>
-                <div class=" col-md-9 col-lg-9 "> 
+                <div class=" col-md-9 col-lg-9 ">
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
@@ -52,7 +52,7 @@
                         <td>Fecha de Nacimiento</td>
                         <td>01/24/1988</td>
                       </tr>
-                   
+
                          <tr>
                              <tr>
                         <td>Genero:</td>
@@ -69,13 +69,13 @@
                         <td>Teléfono</td>
                         <td>123-4567-890(Casa)<br><br>555-4567-890(Celular)
                         </td>
-                           
+
                       </tr>
-                     
+
                     </tbody>
                   </table>
                   <a href="#" class="btn btn-warning">Editar Datos</a>
-                  <a href="#" class="btn btn-primary">Actualizar Contraseña</a>
+                  <a href="${createLink(uri: '/perfil/actualizarPassword')}" class="btn btn-primary">Actualizar Contraseña</a>
                 </div>
               </div>
             </div>

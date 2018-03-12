@@ -11,8 +11,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/olvidePassword.gsp',  access: ['permitAll']],
 	[pattern: '/index',          			access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/index.gsp',       		access: ['IS_AUTHENTICATED_FULLY']],
-	[pattern: '/perfil',          		access: ['IS_AUTHENTICATED_FULLY']],
-	[pattern: '/perfil.gsp',      		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/acerca-de',       		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/acerca-de.gsp',   		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/shutdown',        		access: ['permitAll']],
