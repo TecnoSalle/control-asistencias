@@ -7,9 +7,9 @@ grails.plugin.springsecurity.authority.className = 'com.tecnosalle.sca.Rol'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',                		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/error',           		access: ['permitAll']],
-	[pattern: '/olvidePassword', 			access: ['permitAll']],
-	[pattern: '/olvidePassword.gsp',  access: ['permitAll']],
-	[pattern: '/index',          			access: ['IS_AUTHENTICATED_FULLY']],
+	[pattern: '/olvidePassword', 		access: ['permitAll']],
+	[pattern: '/olvidePassword.gsp',    access: ['permitAll']],
+	[pattern: '/index',          		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/index.gsp',       		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/acerca-de',       		access: ['IS_AUTHENTICATED_FULLY']],
 	[pattern: '/acerca-de.gsp',   		access: ['IS_AUTHENTICATED_FULLY']],
@@ -29,3 +29,8 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**/favicon.ico', filters: 'none'],
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
+
+grails.gorm.default.constraints = {
+	domicilio(nullable: false, size: 3..40)
+	personName(nullable: false, size: 3..35, matches: "[a-zA-Z '-áéíóú]+")
+}
